@@ -60,7 +60,7 @@ self_healing_scraper/
 > 
 > To learn how to link **Telegram Bot alerts** for real-time failure notifications, set up environment tokens, and dive deep into the code architecture, check out the full article on Medium:
 > 
-> 👉 **[Read the Full Article on Medium](YOUR_MEDIUM_ARTICLE_LINK_HERE)**
+> 👉 **[Read the Full Article on Medium](https://medium.com/@ayeshaaghafoor48/beyond-simple-scraping-how-i-built-a-self-healing-engine-with-python-playwright-requests-321893155cf9?sharedUserId=ayeshaaghafoor48)**
 
 ---
 ## Notes
