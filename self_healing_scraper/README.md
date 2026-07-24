@@ -52,7 +52,17 @@ self_healing_scraper/
 ├── requirements.txt
 └── main.py                   # orchestration entry point
 ```
+ ---
 
+### 📢 Detailed Guide & Telegram Integration
+
+> 🚀 **Looking for the step-by-step setup?**
+> 
+> To learn how to link **Telegram Bot alerts** for real-time failure notifications, set up environment tokens, and dive deep into the code architecture, check out the full article on Medium:
+> 
+> 👉 **[Read the Full Article on Medium](YOUR_MEDIUM_ARTICLE_LINK_HERE)**
+
+---
 ## Notes
 
 - Only scrape sites you have permission to scrape and in compliance with their terms of service and applicable law.
