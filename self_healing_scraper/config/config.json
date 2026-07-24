@@ -1,0 +1,62 @@
+{
+  "targets": [
+    {
+      "name": "quotes_public",
+      "url": "http://quotes.toscrape.com/",
+      "login_required": false,
+      "login_url": null,
+      "selectors": {
+        "container": "div.quote",
+        "title": "span.text",
+        "price": "small.author",
+        "email": null
+      },
+      "output": {
+        "format": "json",
+        "path": "storage/output_quotes_public.json"
+      },
+      "pagination": {
+        "enabled": true,
+        "next_button_selector": "li.next a",
+        "max_pages": 5
+      }
+    },
+    {
+      "name": "quotes_authenticated",
+      "url": "http://quotes.toscrape.com/",
+      "login_required": true,
+      "login_url": "http://quotes.toscrape.com/login",
+      "login_selectors": {
+        "username_field": "input#username",
+        "password_field": "input#password",
+        "submit_button": "input[type='submit']",
+        "success_indicator": "a[href='/logout']"
+      },
+      "selectors": {
+        "container": "div.quote",
+        "title": "span.text",
+        "price": "small.author",
+        "email": null
+      },
+      "output": {
+        "format": "json",
+        "path": "storage/output_quotes_auth.json"
+      },
+      "pagination": {
+        "enabled": false,
+        "next_button_selector": null,
+        "max_pages": 1
+      }
+    }
+  ],
+  "request_settings": {
+    "min_delay_seconds": 1.5,
+    "max_delay_seconds": 4.0,
+    "timeout_seconds": 15,
+    "max_retries": 3
+  },
+  "alerting": {
+    "telegram_enabled": false,
+    "email_enabled": false
+  }
+}
